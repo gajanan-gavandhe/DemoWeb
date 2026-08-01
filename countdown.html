@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown | Happy Friendship Day ❤️</title>
+<meta name="description" content="Counting down to the next Friendship Day.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="loading-screen"><div class="loader-heart">💗</div><div class="loader-text">winding the clock…</div></div>
+  <div id="scroll-progress"></div>
+  <canvas id="fx-canvas"></canvas>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">💖 Friendship Day</a>
+    <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="message.html">Message</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="gifts.html">Gifts</a></li>
+      <li><a href="celebrate.html">Celebrate</a></li>
+      <li><a href="letter.html">Letter</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="countdown.html">Countdown</a></li>
+      <li><a href="final.html">Final Surprise</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">☀️</button>
+      <button class="icon-btn" id="music-toggle" aria-label="Toggle music">🔈</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-section countdown-wrap">
+      <div class="eyebrow" style="justify-content:center;">Page Nine</div>
+      <h2 class="section-title">Counting Down to the <em>Next</em> Friendship Day</h2>
+      <p class="section-sub" style="margin:0 auto 10px;">First Sunday of August — mark the calendar.</p>
+
+      <div class="countdown-grid" id="countdown">
+        <div class="count-box"><div class="num" id="cd-days">00</div><div class="label">Days</div></div>
+        <div class="count-box"><div class="num" id="cd-hours">00</div><div class="label">Hours</div></div>
+        <div class="count-box"><div class="num" id="cd-mins">00</div><div class="label">Minutes</div></div>
+        <div class="count-box"><div class="num" id="cd-secs">00</div><div class="label">Seconds</div></div>
+      </div>
+
+      <div style="margin-top:60px;">
+        <a href="final.html" class="btn btn-lg"><span>One Last Surprise →</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with <span class="fh">♥</span> for the friendship that means the world.</footer>
+
+  <div id="music-badge"><div class="eq paused"><span></span><span></span><span></span></div>tap 🔈 for music</div>
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+  <audio id="bg-music" loop preload="none"><source src="assets/music/theme.mp3" type="audio/mpeg"></audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

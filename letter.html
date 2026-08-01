@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secret Letter | Happy Friendship Day ❤️</title>
+<meta name="description" content="A secret letter, sealed just for you.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="loading-screen"><div class="loader-heart">💗</div><div class="loader-text">sealing the envelope…</div></div>
+  <div id="scroll-progress"></div>
+  <canvas id="fx-canvas"></canvas>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">💖 Friendship Day</a>
+    <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="message.html">Message</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="gifts.html">Gifts</a></li>
+      <li><a href="celebrate.html">Celebrate</a></li>
+      <li><a href="letter.html">Letter</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="countdown.html">Countdown</a></li>
+      <li><a href="final.html">Final Surprise</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">☀️</button>
+      <button class="icon-btn" id="music-toggle" aria-label="Toggle music">🔈</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="letter-stage">
+      <div class="eyebrow">Page Seven</div>
+      <h2 class="section-title">A Secret <em>Letter</em></h2>
+
+      <div class="envelope" id="envelope">
+        <div class="back"></div>
+        <div class="paper">click to open</div>
+        <div class="flap"></div>
+      </div>
+      <div class="envelope-hint">tap the envelope</div>
+
+      <div class="letter-full" id="letter-full">
+        <p id="letter-text" data-message="Dear friend,
+
+I don't say this enough, so let me say it today: thank you.
+
+Thank you for the laughter, the late-night talks, and for showing up when it mattered most.
+
+Distance and time have never changed a thing between us, and I hope they never will.
+
+Here's to more memories, more inside jokes, and many more Friendship Days together.
+
+Happy Friendship Day. I'm so lucky to have you.
+
+With love, always."></p>
+      </div>
+
+      <div style="text-align:center; margin-top:50px;">
+        <a href="video.html" class="btn"><span>Watch Our Video →</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with <span class="fh">♥</span> for the friendship that means the world.</footer>
+
+  <div id="music-badge"><div class="eq paused"><span></span><span></span><span></span></div>tap 🔈 for music</div>
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+  <audio id="bg-music" loop preload="none"><source src="assets/music/theme.mp3" type="audio/mpeg"></audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Memories | Happy Friendship Day ❤️</title>
+<meta name="description" content="A gallery of memories — moments worth keeping forever.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="loading-screen"><div class="loader-heart">💗</div><div class="loader-text">unpacking your memories…</div></div>
+  <div id="scroll-progress"></div>
+  <canvas id="fx-canvas"></canvas>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">💖 Friendship Day</a>
+    <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="message.html">Message</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="gifts.html">Gifts</a></li>
+      <li><a href="celebrate.html">Celebrate</a></li>
+      <li><a href="letter.html">Letter</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="countdown.html">Countdown</a></li>
+      <li><a href="final.html">Final Surprise</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">☀️</button>
+      <button class="icon-btn" id="music-toggle" aria-label="Toggle music">🔈</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-section">
+      <div class="eyebrow">Page Two</div>
+      <h2 class="section-title">Our <em>Memories</em></h2>
+      <p class="section-sub">A little slideshow of moments, followed by the full gallery. Click any photo to see it up close.</p>
+
+      <div class="slideshow" id="slideshow">
+        <div class="slide active"><img src="assets/images/photo1.jpg" alt="Memory one" loading="lazy"><div class="slide-caption">that one perfect evening ✨</div></div>
+        <div class="slide"><img src="assets/images/photo2.jpg" alt="Memory two" loading="lazy"><div class="slide-caption">laughing about nothing 💛</div></div>
+        <div class="slide"><img src="assets/images/photo3.jpg" alt="Memory three" loading="lazy"><div class="slide-caption">celebration mode, always 🎉</div></div>
+        <div class="slide"><img src="assets/images/photo4.jpg" alt="Memory four" loading="lazy"><div class="slide-caption">candid and carefree 🌿</div></div>
+        <div class="slide"><img src="assets/images/photo5.jpg" alt="Memory five" loading="lazy"><div class="slide-caption">golden hour, golden friendship ✨</div></div>
+      </div>
+      <div class="slide-dots">
+        <span class="active"></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="gallery-grid" style="margin-top:70px;">
+        <div class="frame"><span class="frame-num">01</span><img src="assets/images/photo1.jpg" alt="Memory one" data-lightbox="assets/images/photo1.jpg" loading="lazy"></div>
+        <div class="frame"><span class="frame-num">02</span><img src="assets/images/photo2.jpg" alt="Memory two" data-lightbox="assets/images/photo2.jpg" loading="lazy"></div>
+        <div class="frame"><span class="frame-num">03</span><img src="assets/images/photo3.jpg" alt="Memory three" data-lightbox="assets/images/photo3.jpg" loading="lazy"></div>
+        <div class="frame"><span class="frame-num">04</span><img src="assets/images/photo4.jpg" alt="Memory four" data-lightbox="assets/images/photo4.jpg" loading="lazy"></div>
+        <div class="frame"><span class="frame-num">05</span><img src="assets/images/photo5.jpg" alt="Memory five" data-lightbox="assets/images/photo5.jpg" loading="lazy"></div>
+       
+      </div>
+      <p class="section-sub" style="margin-top:26px;">The five framed placeholders are ready — just drop your own photos into <code>assets/images/</code> and update the <code>src</code> in <code>gallery.html</code>.</p>
+
+      <div style="text-align:center; margin-top:50px;">
+        <a href="message.html" class="btn"><span>Read the Message →</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with <span class="fh">♥</span> for the friendship that means the world.</footer>
+
+  <div id="lightbox">
+    <span id="lightbox-close">✕</span>
+    <img id="lightbox-img" src="" alt="Memory preview">
+  </div>
+
+  <div id="music-badge"><div class="eq paused"><span></span><span></span><span></span></div>tap 🔈 for music</div>
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+  <audio id="bg-music" loop preload="none"><source src="assets/music/theme.mp3" type="audio/mpeg"></audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
